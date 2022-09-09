@@ -11,6 +11,29 @@ rules = [
         'Move oil from the container 2 into the storage - R6'
     ]
 
+def main():
+    # storage = X, capacity_1 = Y1, capacity_2 = Y2, needed = Z
+    storage, capacity_1, capacity_2, needed = get_vars()
+
+    print(f"\nstorage: {storage}, capacity_1: {capacity_1}, capacity_2: {capacity_2}, needed: {needed}")
+    print("\nBegin create the tree")
+
+    result_ids, tree = create_tree(storage, capacity_1, capacity_2, needed)
+
+    print("\nResults: ", end ='')
+    if len(result_ids):
+        print("Solution nodes:", result_ids)
+        iter = 1
+        for key in result_ids:            
+            print(f'\nSolution {iter}: {tree[key].path}')
+            for num, id in enumerate(tree[key].path):
+                print (f'Turn({num}): {get_node_info(tree[id])}')
+            
+            iter += 1
+    
+    else:
+        print("No solution\n")
+
 
 
 def is_solution(node, needed):
@@ -80,4 +103,7 @@ def get_node_info(node):
 
     return (f'{rules[node.rule]}--{print_tuple}')
 
+
+if __name__ == '__main__':
+    main()
 
