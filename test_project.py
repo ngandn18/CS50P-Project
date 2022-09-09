@@ -2,7 +2,7 @@
 from project import *
 
 from mynode import Node
-import pytest
+# import pytest
 
 def test_is_solution():
     node, needed = Node(10, 8, 6, 4, 6, [0, 2, 6, 8, 10], 3, 4), 5
