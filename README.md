@@ -238,5 +238,8 @@ Run by command:
 
 ![with /dev/null](images/run_mn.png)
 
+## Testing with pytest
+
+### test_project.py
 
 
