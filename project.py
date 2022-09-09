@@ -13,3 +13,9 @@ rules = [
 
 
 
+def is_solution(node, needed):
+    """
+    Check to return True if node is a solution node else Fase
+    """
+    return needed == node.container_1 or needed == node.container_2 
+
