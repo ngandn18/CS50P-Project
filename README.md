@@ -203,7 +203,7 @@ We can save the result output in a text file to review, especially when the outp
 ![run 04 ex](images/run04.png)
 
 ### Run multiple testing with a shell script
-We prepare some text file containing compaqtible values that replace the user inputs:
+We prepare some text file containing compatible values that replace the user inputs:
 - t1, t2, t3, t4, t5 : 2 solution nodes in each case.
 - f1, f2: no solution node in each case.
 
@@ -216,7 +216,7 @@ Run by command:
     $ bash demo.sh
 ```
 
-Too much results, but we can view each correspondant result file.
+Too much results, but we can view each correspondent result file.
 
 ![Multiple results](images/run_m1.png)
 ...
