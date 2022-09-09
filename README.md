@@ -213,7 +213,8 @@ We create a shell script demo.sh:
 
 Run by command:
 ```
-    $ bash demo.sh
+    $ bash demo.
+    ...
 ```
 
 Too much results, but we can view each correspondent result file.
@@ -223,11 +224,16 @@ Too much results, but we can view each correspondent result file.
 ...
 ![Multiple results](images/run_m2.png)
 
-For easy following, we can redirect output to the /dev/null (simply understanding the null bin) and see each result file.
+For easy following, we can redirect output to the /dev/null (as the null bin) and see each result file.
 
 Run by command:
 ```
     $ bash demo.sh > /dev/null
+    ...
+    $ cat result.f1
+    ...
+    $ less result.t1
+    ...
 ```
 
 ![with /dev/null](images/run_mn.png)
