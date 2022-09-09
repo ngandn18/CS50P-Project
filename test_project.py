@@ -23,6 +23,9 @@ def test_is_solution():
     
 
 def test_create_tree():
+    """
+    Assure the list result and the tree is returned correctly.
+    """
     # storage, capacity_1, capacity_2, needed = 16, 12, 6, 5
     result, tree = create_tree(16, 12, 6, 5)
     # no sution node
@@ -44,6 +47,9 @@ def test_create_tree():
 
 
 def test_get_node_info():
+    """
+    Assure the correct info is return correctly for 6 rules.
+    """
     # rule 1
     node = Node(5, 2, 8, 8, 0, [0, 2, 5], 1, 2)
     assert(get_node_info(node) == 'Move oil from the container 2 into container 1 - R1--(8, 8, 0)')
