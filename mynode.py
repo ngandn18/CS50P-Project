@@ -121,3 +121,19 @@ class Node:
                 pseudo_nodes.append(self.create_pseudo_node((n_c1, n_c2), self.id, n_storage, rule))
 
         return pseudo_nodes
+
+
+def get_vars():
+    """
+    Get user inputs: storage = X, capacity_1 = Y1, capacity_2 = Y2, needed = Z
+    """
+    while True:
+        try:
+            storage = int(input("Storage capacity: "))
+            capacity_1 = int(input("Container 1 capacity: "))
+            capacity_2 = int(input("Container 2 capacity: "))
+            needed = int(input("Needed amount: "))
+            
+            return (storage, capacity_1, capacity_2, needed)
+        except ValueError:
+            pass
