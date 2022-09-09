@@ -71,3 +71,13 @@ def create_tree(storage, capacity_1, capacity_2, needed):
 
     return result, tree
 
+
+def get_node_info(node):
+    """
+    return necessary info to print the result.
+    """
+    print_tuple = (node.n_storage, node.container_1, node.container_2)
+
+    return (f'{rules[node.rule]}--{print_tuple}')
+
+
