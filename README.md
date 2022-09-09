@@ -244,4 +244,27 @@ Run by command:
 
 ### test_project.py
 
+File test_project.py contains 3 functions.
 
+#### 1. test_is_solution()
+```
+def test_is_solution():
+    """
+    Test if the needed value exists in Node
+    """
+```
+#### 2. test_create_tree()
+```
+def test_create_tree():
+    """
+    Assure the list result and the tree is returned correctly.
+    """
+```
+#### 3. test_get_node_info()
+```
+def test_get_node_info():
+    """
+    Assure the correct info is return correctly for 6 rules.
+    """
+```
+![pytest image](images/pytest.png)
