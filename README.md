@@ -268,3 +268,5 @@ def test_get_node_info():
     """
 ```
 ![pytest image](images/pytest.png)
+
+### Many thanks to Prof. David Malan and his staff for the awesome course CS50's Introduction to Programming with Python
