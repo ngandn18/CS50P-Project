@@ -39,3 +39,24 @@ def test_create_tree():
     assert(str(tree[32]) == str(Node(32, 30, 2, 8, 6, [0, 2, 6, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32],
  3, 14)))
 
+
+def test_get_node_info():
+    # rule 1
+    node = Node(5, 2, 8, 8, 0, [0, 2, 5], 1, 2)
+    assert(get_node_info(node) == 'Move oil from the container 2 into container 1 - R1--(8, 8, 0)')
+    # rule 2
+    node= Node(6, 2, 0, 10, 6, [0, 2, 6], 2, 2)
+    assert(get_node_info(node) == 'Move oil from the storage into container 1 - R2--(0, 10, 6)')
+    # rule 3
+    node =Node(32, 30, 2, 8, 6, [0, 2, 6, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32], 3, 14)
+    assert(get_node_info(node) == 'Move oil from the container 1 into container 2 - R3--(2, 8, 6)')
+    # rule 4
+    node = Node(12, 10, 3, 5, 8, [0, 1, 4, 8, 10, 12], 4, 5)
+    assert(get_node_info(node) == 'Move oil from the storage into container 2 - R4--(3, 5, 8)')
+    # rule 5
+    node = Node(15, 14, 14, 0, 2, [0, 1, 4, 8, 10, 12, 14, 15], 5, 7)
+    assert(get_node_info(node) == 'Move oil from the container 1 into the storage - R5--(14, 0, 2)')    
+    # rule 6
+    node = Node(7, 3, 13, 3, 0, [0, 1, 3, 7], 6, 3)
+    assert(get_node_info(node) == 'Move oil from the container 2 into the storage - R6--(13, 3, 0)')
+    
