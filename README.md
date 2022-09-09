@@ -40,11 +40,12 @@ Our solution is:
     - n_capacity2: new amount of oil in the container 2
 - If there exists a node that Z = n_capacity1 or Z = n_capacity2, the seller can find a process to get Z liters for his customer, this node is called a solution node.
 - The set {(x1, x2, x3): x1, x2, x3 positive integers and x1+x2+x3=X} has a finite number of elements.
-Our graph has a finite amount of nodes, because n_storage + n_capacity1 + n_capacity_2 = X. 
-- If there is no solution node in the graph then we conclude the problem has no solution.
-- The root node of the graph has the status is (X, 0, 0). This is the status of 2 empty containers.
-- We use the technique of rule-based system to generate the graph. 
-- There are 6 rules to generate our graph:
+- Our tree has a finite amount of nodes, because n_storage + n_capacity1 + n_capacity_2 = X. 
+- We search the tree to find the solution nodes.
+- If there is no solution node in the tree then we conclude the problem has no solution.
+- The root node of the tree has the status is (X, 0, 0). This is the status of 2 empty containers.
+- We use the technique of rule-based system to generate the tree. 
+- There are 6 rules to generate our tree:
     1. Move oil from the container 2 into container 1 - R1',
     2. Move oil from the storage into container 1 - R2',
     3. Move oil from the container 1 into container 2 - R3',
@@ -55,8 +56,8 @@ Our graph has a finite amount of nodes, because n_storage + n_capacity1 + n_capa
 ### Solution tree example
 
 With X = 16, Y1 = 11, Y2 = 6, Z = 5. In the level 2 of the tree we can see 2 solutions:
-- (5, **5**, 6) solution in container 1
-- (0, 11, **5**) solution in container 2. 
+- (5, **5**, 6) solution node contains the needed value in container 1
+- (0, 11, **5**) solution node contains the needed value in container 2. 
 
 ![Solution tree example](images/use_01.png)
 
