@@ -59,7 +59,7 @@ With X = 16, Y1 = 11, Y2 = 6, Z = 5. In the level 2 of the tree we can see 2 sol
 - (5, **5**, 6) solution node contains the needed value in container 1
 - (0, 11, **5**) solution node contains the needed value in container 2. 
 
-![Solution tree example](images/use_01.png)
+![Solution tree example](images/tree-example.png)
 
 ## Programming
 With Python programming language, we create 2 python files: 
