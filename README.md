@@ -34,7 +34,7 @@ X = 16, Y1 = 10, Y2 = 6, Z = 5
 ## Solving Description
 Our solution is:
 - Create a tree contains many nodes.
-- Each node has an unique status represented by a tuple in Python that contains 3 values: (n_storage, n_capacity1, n_capacity_2)
+- Each node contains an unique status that contains 3 values: (n_storage, n_capacity1, n_capacity_2) - similar to a tuple in Python 
     - n_storage: new amount of oil in the storage.
     - n_capacity1: new amount of oil in the container 1
     - n_capacity2: new amount of oil in the container 2
@@ -264,7 +264,7 @@ def test_create_tree():
 ```
 def test_get_node_info():
     """
-    Assure the correct info is return correctly for 6 rules.
+    Assure the correct info is returned correctly for 6 rules.
     """
 ```
 ![pytest image](images/pytest.png)
