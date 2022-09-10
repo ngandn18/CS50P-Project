@@ -264,7 +264,7 @@ def test_create_tree():
 ```
 def test_get_node_info():
     """
-    Assure the correct info is returned correctly for 6 rules.
+    Assure the node information is returned correctly for 6 rules.
     """
 ```
 ![pytest image](images/pytest.png)
