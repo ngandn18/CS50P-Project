@@ -173,15 +173,16 @@ def get_node_info(node):
     """
     ...
 ```
-## Running the program
+## Demo the program
 
-### Run with user input
+### 1. Run with user input
 
 ![run 01 ex](images/run01.png)
 
-### Run with text file replacing the user input
+### 2. Run with text file replacing the user input
 
-For quick testing and easy running, we use text file to replace user inputs:
+For quick testing and easy running, we use text file to replace user inputs.
+
 For example, we create a text file named t5 contains for lines contains four values 16, 11, 6, 5 and run by 2 ways:
 ```
 $ python project.py < t5
@@ -190,9 +191,9 @@ $ cat t5 | python project.py
 ```
 ![run 02 ex](images/run02.png)
 
-### Run and save the result in a text file
+### 3. Run and save the result in a text file
 
-We can save the result output in a text file to review, especially when the output is too long. The following command help us to view both the result on the screen and the result in the text file. Command *less* help us view each page if the content is large. 
+We can save the result output in a text file to review, especially when the output is too long. The following command help us to view both the result on the screen and the result in the text file. Command *less* help us view each page in the large content. 
 ```
     $ cat t1 | python project.py | tee result.t1
     ...
@@ -204,7 +205,7 @@ We can save the result output in a text file to review, especially when the outp
 ```
 ![run 04 ex](images/run04.png)
 
-### Run multiple testing with a shell script
+### 4. Run multiple testing with a shell script
 We prepare some text file containing compatible values that replace the user inputs:
 - t1, t2, t3, t4, t5 : 2 solution nodes in each case.
 - f1, f2: no solution node in each case.
