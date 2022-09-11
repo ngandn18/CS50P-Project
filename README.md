@@ -4,9 +4,9 @@
 - The seller has:
     - A storage with X liters of oil and 
     - Two empty containers with capacities Y1 and Y2. Each container has no line (no sign) to show how much it contains. So, he can fill until the container is full or any amount that he can. 
-
-- A customer wants to buy Z liters of oil.
-- How can the seller know the process to get Z liters for his customer?
+    - A customer wants to buy Z liters of oil.
+    - How can the seller know the process to get Z liters in one container for his customer?
+- The seller can move oil from storage to any container, and from this container to other container, and vice versa.​
 - In this problem, all values X, Y1, Y2, and Z are supposed to be positive integers.
 
 This problem is often used as an example for heuristic algorithm problem in some AI course.
@@ -34,7 +34,7 @@ X = 16, Y1 = 10, Y2 = 6, Z = 5
 ## Solving Description
 Our solution is:
 - Create a tree contains many nodes.
-- Each node contains an unique status that contains 3 values: (n_storage, n_capacity1, n_capacity_2) - similar to a tuple in Python 
+- Each node contains an unique status that contains 3 values: (n_storage, n_capacity1, n_capacity_2): 
     - n_storage: new amount of oil in the storage.
     - n_capacity1: new amount of oil in the container 1
     - n_capacity2: new amount of oil in the container 2
