@@ -39,8 +39,8 @@ Our solution is:
     - n_capacity1: new amount of oil in the container 1
     - n_capacity2: new amount of oil in the container 2
 - If there exists a node that Z = n_capacity1 or Z = n_capacity2, the seller can find a process to get Z liters for his customer, this node is called a solution node.
-- The set {(x1, x2, x3): x1, x2, x3 positive integers and x1+x2+x3=X} has a finite number of elements.
-- Our tree has a finite amount of nodes, because n_storage + n_capacity1 + n_capacity_2 = X. 
+- The set {(x1, x2, x3): x1, x2, x3 positive integers and x1 + x2 + x3 = X} has a finite number of elements.
+- Similarly, since n_storage + n_capacity1 + n_capacity_2 = X, so our tree has a finite amount of nodes.
 - We search through the tree for the solution nodes.
 - If there is no solution node in the tree then we conclude the problem has no solution.
 - The root node of the tree has the status is (X, 0, 0). This is the status of 2 empty containers.
